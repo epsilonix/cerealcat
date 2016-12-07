@@ -34,13 +34,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 
     <header class="desktop">
+			
         <div class="stickynav" id="main-header">
+		
+		
+		
+		
+		
+		
             <div class="inner">
                 </nav>
                 <nav class="right">
                     <div class="nav-images" id="nav-wrap">
-                        <img src="images/mini-dutchie.png" data-href="dutchie">
-                        <img src="images/mini-fritter.png" data-href="fritter">
                         <img src="images/mini-coffee.png" data-href="coffee">
                         <img src="images/mini-timbits.png" data-href="timbits">
                         <img src="images/mini-sprinkles.png" data-href="sprinkles">
@@ -56,6 +61,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 	</header>
 <body>
+	
+	
+		<script>
+		  // Resizes page border properly
+		  function resizePageBorder() {
+		   var MAX_WIDTH = 1500;
+		   var width = $(window).width();
+		   if (width < MAX_WIDTH) {
+			$(".pageborder").css({"width": "90%"});
+		   } else {
+			$(".pageborder").css({"width": MAX_WIDTH});
+		   }
+		  }
+		  
+		  $(window).resize(function() {
+		   resizePageBorder();
+		  });
+  
+		</script>
+	
 	
 	<img src="images/topcat.png" class="topcat" id="topcat"></a>
 	
