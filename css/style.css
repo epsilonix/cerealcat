@@ -74,7 +74,7 @@ body a:hover{
 
 header.desktop {
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #FCFCFC;
   *zoom: 1; }
   header.desktop:before, header.desktop:after {
     content: " ";
@@ -84,7 +84,7 @@ header.desktop {
   header.desktop .stickynav {
     height: 83px;
     position: fixed;
-    background-color: #fff;
+    background-color: #FCFCFC;
     width: 100%;
     z-index: 10; }
     @media screen and (max-width: 650px) {
@@ -164,10 +164,8 @@ header.desktop {
     text-transform: uppercase;
     color: #ff212a;
     margin: 1em 0 1em 0; }
-  header.desktop .timsbio {
-    display: none;
-    padding-top: 20px;
-    text-align: left; }
+
+	
   header.desktop button {
     margin: 25px 0 0 0; }
   header.desktop .nav-images img {
@@ -178,13 +176,7 @@ header.desktop {
     header.desktop .nav-images img:hover {
       cursor: pointer;
       opacity: .9; }
-  header.desktop .progress-bar {
-    display: block;
-    margin: -3px 0 0;
-    background: #ff212a;
-    height: 5px;
-    width: 0;
-    border-radius: 2px; }
+	  
 
 header.mobile {
   display: none;
