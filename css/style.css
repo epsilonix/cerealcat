@@ -70,13 +70,15 @@ body a:hover{
 
 }
 
+.abovenavbar{
+    height:20px;
+    width:100%;
+    position:absolute;
+	background-color: #ECECEC;
+}
+
 /* BARRRRR */
 
-header.abovebar{
-	background-color: #000000;
-	position: fixed;
-	height: 20px
-}
 
 header.desktop {
   margin: 0 auto;
@@ -88,8 +90,8 @@ header.desktop {
   header.desktop:after {
     clear: both; }
   header.desktop .stickynav {
-    margin-top: 20px;
-	height: 83px; /* 83 */
+
+	height: 100px; /* 83 */
     position: fixed;
     background-color: #FCFCFC;
     width: 100%;
@@ -132,9 +134,9 @@ header.desktop {
     header.desktop .inner:after {
       clear: both; }
     header.desktop .inner nav {
-      padding-left: 15px; }
+      padding-left: 100px; }
       header.desktop .inner nav.right {
-        padding-top: 13px;
+        padding-top: 30px;
         float: right; }
         @media screen and (max-width: 650px) {
           header.desktop .inner nav.right {
