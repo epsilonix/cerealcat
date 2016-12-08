@@ -41,8 +41,8 @@ body a:hover{
 /* top logo and border*/
 
 .toplogo{
+	
 	display: block;
-	margin: 50px auto;
 	outline: none;
 	position: relative;
 	z-index: 15;
@@ -53,15 +53,14 @@ body a:hover{
 }
 
 .topcat{
-	position: absolute;
-	left: 60%;
-	padding-top: 100px;
+	position: relative;
+
 }
 
 
 .pageborder{
 	border: 2px solid grey;
-	margin-top: -110px;
+	margin-top: 200px;
     margin-bottom: 100px;
     margin-right: auto;
     margin-left: auto;
@@ -90,7 +89,7 @@ header.desktop {
     clear: both; }
   header.desktop .stickynav {
     margin-top: 20px;
-	height: 83px;
+	height: 83px; /* 83 */
     position: fixed;
     background-color: #FCFCFC;
     width: 100%;
@@ -180,10 +179,14 @@ header.desktop {
     opacity: 1;
     -webkit-transition: all 0.15s ease-out 0;
     -moz-transition: all 0.15s ease-out 0;
-    transition: all 0.15s ease-out 0; }
+    transition: all 0.15s ease-out 0; 
+	animation-play-state:paused;
+	}
     header.desktop .nav-images img:hover {
       cursor: pointer;
-      opacity: .9; }
+      opacity: .9; 
+	  animation-play-state: running;
+	  }
 	  
 
 header.mobile {
@@ -772,7 +775,7 @@ ul.navig li a.active{
 	text-align:center;
 }
 .abt-one {
-	margin-top:12%;
+	margin-top:-16%;
 	text-align:center;
 }
 .abt-one p{

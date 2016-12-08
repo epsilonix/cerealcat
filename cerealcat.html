@@ -13,6 +13,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<title>Cerealcat</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+
 
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
@@ -29,6 +31,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			});
 		});
 	</script>
+	
+	
+	
 			
 	<!--start-smoth-scrolling-->
 </head>
@@ -37,16 +42,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			
         <div class="stickynav" id="main-header">
 		
-		
-		
-		
-		
+	
 		
             <div class="inner">
-                </nav>
+				<nav class="left">
+					<div class="nav-images" id="nav-wrap">
+						<img src="images/cerealcolor.png" onload="this.width/=2;this.onload=null;" class="toplogo" id="toplogo"></a>
+							<script>
+								$("#toplogo").hover(function(){
+									$(this).attr('src','images/cerealbright.png'); //changed from '/images...' to 'images', also flipped color and bw.
+									}, function(){
+									$(this).attr('src','images/cerealcolor.png'); //same as above, you had it on mouseover, go color, on mouseout go blackwhite, 
+																				  //i flipped it because it loads as color so i think it was just a mistake on your part
+									}											  //it also seems like your bw version is transparent. i recommend coloring it to the same background as the page. so you don't see the border
+								);
+							</script>
+					</div>
+				</nav>
                 <nav class="right">
                     <div class="nav-images" id="nav-wrap">
-                        <img src="images/mini-coffee.png" data-href="coffee">
+                        <img src="images/animatedcat.gif" onload="this.width/=8;this.onload=null;">
                         <img src="images/mini-timbits.png" data-href="timbits">
                         <img src="images/mini-sprinkles.png" data-href="sprinkles">
                         <img src="images/mini-boston.png" data-href="boston">
@@ -82,9 +97,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</script>
 	
 	
-	<img src="images/topcat.png" class="topcat" id="topcat"></a>
+
 	
-	<img src="images/cerealcolor.png" onload="this.width/=2;this.onload=null;" class="toplogo" id="toplogo"></a>
+	<!--  <img src="images/cerealcolor.png" onload="this.width/=2;this.onload=null;" class="toplogo" id="toplogo"></a>
 	<script>
 	$("#toplogo").hover(function(){
 		$(this).attr('src','images/cerealbright.png'); //changed from '/images...' to 'images', also flipped color and bw.
@@ -93,13 +108,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 													  //i flipped it because it loads as color so i think it was just a mistake on your part
 		}											  //it also seems like your bw version is transparent. i recommend coloring it to the same background as the page. so you don't see the border
 	);
-	</script>
+	</script> 
+	
+	-->
 	
 	<div class="pageborder">
 		<!--header-top-end-->
 		<!--start-header-->
 		
-<!--here you go sam-->
+<!--here you go sam
 	<div class="samnav">
 		<div class="imgContainer">
 			<img src="images/homebutton.png">
@@ -114,7 +131,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 		<span class="stretch"></span>
 	</div>
-	
+	-->
 		
 		<!-- script-for-menu -->
 		<script>
@@ -217,8 +234,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>	
 					</div>
 					<div class="col-md-4 about-right heading">
+						<img src="images/topcat.png" class="topcat" id="topcat"></a>
 						<div class="abt-1">
-							<h3>ABOUT US</h3>
+							
 							<div class="abt-one">
 								<img src="images/c-2.jpg" alt="" />
 								<p>Quisque non tellus vitae mauris luctus aliquam sit amet id velit. Mauris ut dapibus nulla, a dictum neque.</p>
