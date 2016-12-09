@@ -15,6 +15,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 html, body{
     font-size: 100%;
 	background:	#fff;
+	max-width: 100%;
+	overflow-x:hidden;
 }
 body {
 	font-size: 100%;
@@ -48,7 +50,9 @@ body a:hover{
 	z-index: 15;
 	width: 200px;
 	padding-top: 0px;
-	
+	margin: auto;
+	top: -20px;
+	right: -200px;
 
 }
 
@@ -90,7 +94,6 @@ header.desktop {
   header.desktop:after {
     clear: both; }
   header.desktop .stickynav {
-
 	height: 100px; /* 83 */
     position: fixed;
     background-color: #FCFCFC;
@@ -146,7 +149,10 @@ header.desktop {
           header.desktop .inner nav.right img {
             width: 30px; } }
       header.desktop .inner nav.left {
-        float: left; }
+        margin: auto; 
+
+		}
+		
         @media screen and (max-width: 650px) {
           header.desktop .inner nav.left {
             float: none;
