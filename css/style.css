@@ -53,14 +53,30 @@ body a:hover{
 	margin: auto;
 	top: -20px;
 	right: -200px;
-
 }
+@media screen and (max-width: 991px) {
+.toplogo{
+	display: none;
+}}
+
+.midlogo{
+	outline: none;
+	position: relative;
+	z-index: 15;
+	width: 200px;
+	left: 35%;
+}
+
+@media screen and (min-width: 990px){
+.midlogo{
+	display: none;
+	z-index: -1000;
+}}
 
 .topcat{
 	position: relative;
 
 }
-
 
 .pageborder{
 	border: 2px solid grey;
@@ -69,7 +85,6 @@ body a:hover{
     margin-right: auto;
     margin-left: auto;
 	z-index: 2;
-	padding-top: 50px;
 	 width: 90%;
 
 }
@@ -154,9 +169,9 @@ header.desktop {
 		}
 		
         @media screen and (max-width: 650px) {
-          header.desktop .inner nav.left {
+       /*   header.desktop .inner nav.left {
             float: none;
-            text-align: center; }
+            text-align: center; } */
             header.desktop .inner nav.left h3 {
               margin: 17px 0 1px 0; } }
         @media screen and (max-width: 480px) {
@@ -1540,7 +1555,7 @@ ul.navig li a {
     min-height: 390px;
 }
 .about {
-    padding: 3em 0px;
+    /* padding: 3em 0px; */
 }
 .abt-left {
     width: 50%;
